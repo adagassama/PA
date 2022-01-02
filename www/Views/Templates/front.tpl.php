@@ -2,14 +2,15 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Template Frontoffice</title>
+	<title>PA-Rattrapage</title>
 	<meta name="description" content="Formulaire d'inscription">
+	<link rel="stylesheet" href="Assets/css/register.css" />
 </head>
 <body>
 
 	<header>
-		<h1>Welcome</h1>
-		<nav></nav>
+	<center><h1> Projet de Rattrapage</h1></center>
+		
 	</header>
 
 	<section>

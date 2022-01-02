@@ -40,10 +40,9 @@ class FormValidator
 		return $errors;
 	}
 
+	
 	public static function check($form, $data){
 		$errors = [];
-
-		if( count($data) == count($form["inputs"])){
 
 			foreach ($form["inputs"] as $name => $configInput) {
 				
@@ -55,11 +54,6 @@ class FormValidator
 				}
 
 			}
-
-
-		}else{
-			$errors[] = "Tentative de Hack";
-		}
 
 		return $errors;
 	}

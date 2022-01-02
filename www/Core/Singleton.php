@@ -62,7 +62,7 @@ class Singleton
 		}
 
 		$result = $this->getPDO()->prepare($query)->execute($columns);
-		echo "HALLO // :" . var_dump($result);
+		echo "Utilisateur enregistré ";
 	}
 
 }

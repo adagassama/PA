@@ -53,7 +53,6 @@ class Mailing
         try {
             //Server settings
             $mail->isSMTP();
-            $mail->SMTPDebug = 2;
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->Username = 'pharaonpapyrus1@gmail.com';
@@ -62,13 +61,11 @@ class Mailing
             $mail->Port = 587;
 
             //Recipients
-            $mail->setFrom('contact@adamagassama.com', 'SERVICE INFORMATIQUE');
+            $mail->setFrom('contact@adamagassama.com', 'Service Informatique');
             $mail->addAddress($email);
-            var_dump($mail);
-
             //Content
             $mail->isHTML(true);
-            $mail->Subject = 'Nouvel utilisateur';
+            $mail->Subject = 'Nouvel Utilisateur';
             $mail->Body    = 'Bonjour un nouveau compte vient dêtre créé pour vous !!!';
             $mail->send();
             echo 'Message envoyé ';

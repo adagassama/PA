@@ -60,11 +60,11 @@ class SecurityController
 				}
 			} else {
 				$view->assign("errors", $errors);
+				
 			}
 		}
 
 		$view->assign("form", $form);
-	
 	}
 
 	
