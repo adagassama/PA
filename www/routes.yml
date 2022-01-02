@@ -1,0 +1,8 @@
+/:
+  controller: Main
+  action: default
+/register:
+  controller : "SecurityController" 
+  action : "registerAction"
+
+
