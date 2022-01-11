@@ -146,7 +146,7 @@ class User extends Singleton
                     "class" => "form_input",
                     "placeholder" => "Exemple: GASSAMA",
                     "value" => '',
-                    "error" => "Votre nom doit faire entre 2 et 255 caractères",
+                    "error" => "",
                     "required" => true
                 ],
                 "email" => [
@@ -158,7 +158,7 @@ class User extends Singleton
                     "class" => "form_input",
                     "placeholder" => "Exemple: nom@gmail.com",
                     "value" => '',
-                    "error" => "Votre email doit faire entre 8 et 320 caractères",
+                    "error" => "",
                     "required" => true
                 ],
                 "pwd" => [
@@ -167,18 +167,18 @@ class User extends Singleton
                     "minLength" => 8,
                     "id" => "pwd",
                     "class" => "form_input",
-                    "placeholder" => "",
-                    "error" => "Votre mot de passe doit faire au minimum 8 caractères",
+                    "placeholder" => "Mot de passe",
+                    "error" => "",
                     "required" => true
                 ],
                 "pwdConfirm" => [
                     "type" => "password",
-                    "label" => "Confirmation",
+                    "label" => "Confirmation du mot de passe",
                     "confirm" => "pwd",
                     "id" => "pwdConfirm",
                     "class" => "form_input",
-                    "placeholder" => "",
-                    "error" => "Votre mot de mot de passe de confirmation ne correspond pas",
+                    "placeholder" => "Confirmation du mot de passe",
+                    "error" => "",
                     "required" => true
                 ]
             ]

@@ -25,13 +25,6 @@ class SecurityController
 
 			$errors = FormValidator::check($form, $_POST);
 
-			$form['inputs']['email']['value'] = $_POST['email'];
-
-			$form['inputs']['firstname']['value'] = $_POST['firstname'];
-
-			$form['inputs']['lastname']['value'] = $_POST['lastname'];
-
-
 			if (empty($errors)) {
 
 				 $mailExists = $userRegister->verifyMail($_POST['email'], $userRegister->getTable());
@@ -53,13 +46,13 @@ class SecurityController
 
 
 					}else{
-						$view->assign("errors", ["Vos mots de passe sont différents."]);
+						echo 'Votre mot de mot de passe de confirmation ne correspond pas';
 					}
-				} else {
-					$view->assign("errors", ["Ce mail est déjà utilisé."]);
+				} else{
+					echo 'Ce Mail existe déjà';
 				}
 			} else {
-				$view->assign("errors", $errors);
+				echo 'Champ incorrect ';
 				
 			}
 		}
