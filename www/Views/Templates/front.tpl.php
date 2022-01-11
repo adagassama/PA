@@ -9,7 +9,7 @@
 <body>
 
 	<header>
-	<center><h1> Projet de Rattrapage</h1></center>
+	<center><h1> PROJET ANNUEL</h1></center>
 		
 	</header>
 
